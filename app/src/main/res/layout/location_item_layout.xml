@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="#e8e8e8"
+    app:cardCornerRadius="@dimen/dimen16dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1EA6FF">
+
+        <ImageView
+            android:id="@+id/icon_imageview"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/dimen16dp"
+            />
+
+        <TextView
+            android:id="@+id/place_name_textview"
+            style="@style/InfoText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen16dp"
+            android:textSize="@dimen/text_16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_imageview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_imageview"
+            app:layout_constraintTop_toTopOf="@+id/icon_imageview"
+            tools:text="Place Name" />
+
+        <TextView
+            android:id="@+id/rating_textview"
+            style="@style/InfoText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen16dp"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_imageview"
+            tools:text="Rating" />
+
+        <TextView
+            style="@style/InfoText"
+            android:id="@+id/place_address_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rating_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Address"
+            android:textSize="@dimen/text_12sp"
+            android:layout_margin="@dimen/dimen16dp"/>
+        <TextView
+            style="@style/InfoText"
+            android:id="@+id/price_rating_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Price Rating"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintTop_toBottomOf="@id/place_address_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/dimen16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

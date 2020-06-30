@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=13:DF:CB:BF:3A:BC:C0:7B:B4:94:6C:A3:00:97:5A:D6:D5:36:60:12%3Bcom.bigbang.myplacecompass
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.bigbang.myplacecompass
+
+    SHA-1 certificate fingerprint:
+    13:DF:CB:BF:3A:BC:C0:7B:B4:94:6C:A3:00:97:5A:D6:D5:36:60:12
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA5rJh9FeteViW7n9M3iORS7d8L7W75wVI</string>
+</resources>

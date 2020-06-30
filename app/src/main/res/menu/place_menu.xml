@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cafe_item"
+        android:title="@string/cafe_text" />
+    <item
+        android:id="@+id/police_item"
+        android:title="@string/police_text" />
+    <item
+        android:id="@+id/school_item"
+        android:title="@string/school_item" />
+    <item
+        android:id="@+id/hospital_item"
+        android:title="@string/hospital_item" />
+    <item
+        android:id="@+id/gym_item"
+        android:title="@string/gym_item" />
+    <item
+        android:id="@+id/zoo_item"
+        android:title="@string/zoo_item" />
+    <item
+        android:id="@+id/laundry_item"
+        android:title="@string/laundry_item" />
+    <item
+        android:id="@+id/park_item"
+        android:title="@string/park_item" />
+</menu>

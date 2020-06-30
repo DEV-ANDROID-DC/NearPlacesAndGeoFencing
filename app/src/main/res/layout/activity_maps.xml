@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/my_location_imageview"
+        android:layout_width="@dimen/dimen50dp"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_margin="@dimen/dimen16dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="220dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_my_location"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/map_menu_imageview"
+        android:layout_width="@dimen/dimen50dp"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_margin="@dimen/dimen16dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="220dp"
+        android:elevation="8dp"
+        android:src="@drawable/ic_menu"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/place_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="4dp"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.view.HomeActivity" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/location_item_layout"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent=".70"/>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/currentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            map:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/fab_margin"
+            map:layout_constraintBottom_toTopOf="@+id/newReminder"
+            map:srcCompat="@drawable/ic_baseline_my_location_24px" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:srcCompat="@drawable/ic_baseline_add_24px" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
